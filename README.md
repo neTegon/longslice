@@ -26,3 +26,17 @@ for(int i=0; i<vet.Length;i++)
     }
 }
 ```
+Poi ho fatto un for con un'altro for annidato nel quale calcolavo il prodotto e poi con un if controllavo se il prodotto successivo era maggiore di quello precedente utilizzando una variabile d'appoggio
+```
+for(int i=0; i<=vet.Length-span;i++)
+        {
+            prodotto=1;
+            for(int j=i;j<i+span;j++)
+            {
+                prodotto=prodotto* Convert.ToInt64(Char.GetNumericValue(vet[j]));
+            }
+            if(prodotto>temp)
+            {
+                temp=prodotto;
+            }
+   ```  
